@@ -4,21 +4,21 @@ import java.util.Arrays;
 class Solution {
     public int[] solution(int[] arr, int divisor) {
         int[] answer = {};
-        ArrayList<Integer> list = new ArrayList<>();
+        ArrayList<Integer> intList = new ArrayList<>();
 
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] % divisor == 0) {
-                list.add(arr[i]);
+                intList.add(arr[i]);
             }
         }
-        if (list.isEmpty()) {
-            list.add(-1);
+        if (intList.isEmpty()) {
+            intList.add(-1);
         }
         
-        answer = new int[list.size()];
+        answer = new int[intList.size()];
 
-        for (int i = 0; i < list.size(); i++) {
-            answer[i] = list.get(i);
+        for (int i = 0; i < intList.size(); i++) {
+            answer[i] = intList.get(i);
         }
         Arrays.sort(answer);
 
